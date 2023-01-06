@@ -86,3 +86,16 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+// Calculate total number of months
+let totalMonths = finances.length;
+console.log("Total number of months: " + totalMonths)
+
+// Calculate the net profit/loss over the entire period
+
+let netProfit = 0;
+
+for (i=0; i<finances.length; i++) {
+  netProfit = netProfit + finances[i][1];
+}
+console.log("Total profit: " + netProfit)
